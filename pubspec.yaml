@@ -1,0 +1,57 @@
+name: projec  # تأكد من أن الاسم يتطابق مع اسم المجلد الخاص بمشروعك
+
+description: "A new Flutter project."
+
+# يمنع النشر العرضي للحزمة على pub.dev باستخدام `flutter pub publish`.
+# هذا مفضل للحزم الخاصة. احذف هذا السطر إذا كنت ترغب في النشر على pub.dev
+publish_to: 'none'
+
+# تعريف الإصدار ورقم البناء للتطبيق الخاص بك.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.6  # تم تحديث الإصدار إلى الأحدث المتاح
+  email_validator: ^3.0.0  # تم تصحيح الإصدار إلى الأحدث المتاح
+  image_picker: ^0.8.9  # تم تحديث الإصدار إلى الأحدث المتاح
+  cupertino_icons: ^1.0.8
+  permission_handler: ^10.2.0  # تأكد من إضافة هذه الحزمة
+  device_info_plus: ^11.1.1
+  video_player: ^2.5.2
+  cached_network_image: ^3.2.3
+  shared_preferences: ^2.0.15
+  image: ^4.0.18
+  dio: ^5.1.2
+  chewie: ^1.3.0
+
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/
+    # يمكنك إضافة المزيد من الأصول هنا، على سبيل المثال:
+    # - images/a_dot_ham.jpeg
+
+  # لإضافة خطوط مخصصة، يمكنك استخدام القسم التالي:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
